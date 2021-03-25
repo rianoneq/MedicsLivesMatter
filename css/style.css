@@ -24,6 +24,11 @@ button{
   outline: none;
   border: none;
 }
+img{
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+}
 body{
   font-family: 'Muli', sans-serif;
 }
@@ -35,6 +40,7 @@ body{
     width: 56px;
   }
 }
+
 .afterAnim{
   animation: titleAnim 1.5s;
 }
@@ -43,9 +49,8 @@ body{
   max-width: 85%;
 }
 .header{
+  height: 100vh;
   padding: 36px 0 0;
-  max-width: 85%;
-  margin: auto;
   margin-bottom: 30px;
 }
 .header__content{
@@ -85,11 +90,10 @@ body{
 .virtual{
   background-image: url('../images/illustration.svg');
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: top right;
-  padding-top: 60px;
-  max-width: 85%;
-  margin: auto;
+  background-size: 600px  ;
+  background-position: top 15% right;
+  padding-top: 85px;
+  padding-bottom: 100px;
 }
 .virtual__title{
   font-weight: bold;
@@ -167,6 +171,9 @@ body{
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: relative;
+}
+.decor{
+  position: absolute;
 }
 .decor02{
   position: absolute;
@@ -697,7 +704,30 @@ body{
   }
 }
 @media (max-width: 1200px) {
-  
+    .header__navigation{
+    flex-direction: column;
+    margin-left: 0;
+    padding: 0;
+  }
+  .header__content{
+    flex-direction: column;
+  }
+  .decor{
+    position: absolute;
+    top: 10%;
+  }
+  .virtual__img{
+    display: block;
+    height: 45vh;
+  }
+  .virtual{
+    justify-content: center;
+    display: flex;
+    background-image: none;
+    margin-top: 0;
+    height: 100vh;
+    padding-top: 0;
+  }
   .services__card-item{
     padding: 30px 30px 20px;
     flex-basis: 40%;
@@ -745,27 +775,7 @@ body{
   
 }
 @media (max-width: 991px) {
-  .header__navigation{
-    flex-direction: column;
-    margin-left: 0;
-    padding: 0;
-  }
-  .header__content{
-    flex-direction: column;
-  }
-  .decor{
-    position: absolute;
-    top: 10%;
-  }
-  .virtual__img{
-    display: block;
-    height: 45vh;
-  }
-  .virtual{
-    background-image: none;
-    margin-top: 0;
-    padding-top: 0;
-  }
+
   .virtual__content{
     margin: auto;
   }
