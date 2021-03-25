@@ -26,7 +26,6 @@ button{
 }
 img{
   height: auto;
-  width: 100%;
   max-width: 600px;
 }
 body{
@@ -167,12 +166,14 @@ body{
 
 }
 .services__cards{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: relative;
 }
 .decor{
+  top: 100px;
   position: absolute;
 }
 .decor02{
