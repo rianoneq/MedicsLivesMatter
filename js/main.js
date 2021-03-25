@@ -10,6 +10,11 @@ $(document).ready(function () {
   $('.slider').slick({
     dots: true,
     slidesToShow: 1,
+    
+  });
+  $('.slider__card').css({
+    "margin-left": "+=54",
+    "margin-right": "+=54"
   });
 });
 

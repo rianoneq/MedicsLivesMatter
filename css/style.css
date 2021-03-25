@@ -348,13 +348,15 @@ body{
 .btn-block02 span{
   margin-right: 15px;
 }
+.slider{
+  padding: 0 100px 0 100px;
+}
 .slider__card{
   flex-direction: column;
   display: flex;
   width: 1120px;
   background: linear-gradient(191.49deg, #67C3F3 9.05%, #5A98F2 76.74%);
   border-radius: 24px;
-  margin: auto;
   padding-top: 64px;
   padding-bottom: 90px;
   margin-bottom: 30px;
@@ -364,6 +366,7 @@ body{
   outline: none;
   border: none;
 }
+
 .decor-person02{
   position: absolute;
   bottom: 20px;
@@ -750,6 +753,10 @@ body{
   }
 }
 @media (max-width: 1176px) {
+  .slider .slick-arrow.slick-next {
+    position: absolute;
+    right: 31%;
+  }
   .slider__card{
     width: 700px;
     padding-top: 15px;
@@ -776,6 +783,13 @@ body{
   
 }
 @media (max-width: 991px) {
+  .slider{
+    padding: 0 70px 0 70px;
+  }
+  .slider .slick-arrow.slick-next {
+    position: absolute;
+    right: 29%;
+}
 
   .virtual__content{
     margin: auto;
@@ -788,6 +802,9 @@ body{
   }
 }
 @media (max-width: 776px) {
+  .slider{
+    padding: 0 60px 0 60px;
+  }
   .slider__card{
     width: 400px;
     padding: 15px;
@@ -819,6 +836,10 @@ body{
   }
 }
 @media (max-width: 660px) {
+  .slider .slick-arrow.slick-next {
+    position: absolute;
+    right: 27%;
+}
   .block01{
     margin-bottom: 90px;
   }
@@ -831,8 +852,19 @@ body{
   .services__content-text{
     margin-bottom: 10px;
   }
+  .slick-arrow{
+    display: none !important;
+  }
 }
 @media (max-width: 576px) {
+  .slider{
+    padding: 0 50px 0 50px;
+  }
+   .slider__card-descr {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 115%;
+  }
   .virtual__title{
     font-size: 30px;
   }
@@ -865,6 +897,14 @@ body{
   }
 }
 @media (max-width: 401px) {
+  .slider{
+    padding: 0 10px 0 10px;
+  }
+  .slider__card-descr {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 115%;
+  }
   .virtual__img{
     display: block;
     height: 25vh;
